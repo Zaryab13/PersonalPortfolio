@@ -3,7 +3,6 @@
 import React, { useRef} from "react";
 import Image from "next/image";
 import { useScroll, motion, useTransform } from "framer-motion";
-
 const ProjectCard = ({ title, description, tags, imageUrl }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -22,8 +21,8 @@ const ProjectCard = ({ title, description, tags, imageUrl }) => {
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     > 
-      <section className="relative bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 sm:h-[20rem] group-even:pl-8 hover:bg-gray-200 transition rounded-xl">
-        <div className="flex flex-col h-full pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:max-w-[50%] group-even:ms-[18rem]">
+      <section className="relative bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 sm:h-[20rem] hover:bg-gray-200 transition rounded-xl">
+        <div className="overflow-y-auto flex flex-col h-full pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:max-w-[50%] z-50 sm:group-even:ms-[14rem] md:group-even:ms-[18rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
@@ -41,7 +40,7 @@ const ProjectCard = ({ title, description, tags, imageUrl }) => {
           src={imageUrl}
           alt="Projects I Worked On"
           quality={95}
-          className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:-right-[initial] group-even:-left-40 
+          className="hidden sm:block absolute top-4 -right-60 md:top-8 md:-right-40  w-[28.25rem] rounded-t-lg shadow-2xl group-even:-right-[initial] group-even:-left-60 md:group-even:-left-40
         transition 
         group-hover:scale-[1.04]
         group-hover:-translate-x-3

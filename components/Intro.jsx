@@ -7,10 +7,24 @@ import { HiDownload } from "react-icons/hi";
 import React from "react";
 import Link from "next/link";
 import { FaGithubSquare } from "react-icons/fa";
+import useSectionView from "@/hooks/useSection-View";
 
 const Intro = () => {
+  const [observerRef] = useSectionView("Home", 0.5)
+//   const { ref: observerRef, inView } = useInView({
+//     threshold: 0.50,
+//   }); //ref to attach the oberver APi with element and a value weather it is in view or not
+//   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
+
+// useEffect(() => {
+//   if (inView && new Date() - timeOfLastClick > 1000 ) {
+//     setActiveSection("Home");
+//   }
+// }, [inView]);
   return (
-    <section id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[50rem]">
+    <section
+      ref={observerRef}
+    id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[50rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
