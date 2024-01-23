@@ -10,9 +10,9 @@ import ThemeContextProvider from "@/context/theme-context";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Nasir | Portfolio",
+  title: "Zaryab | Portfolio",
   description:
-    "Nasir Hussain is a Full Stack Developer with 3+ years of experience",
+    "Zaryab Khan is a Full Stack Developer with 1+ years of experience In Various web technologies such as Vanilla JS React.js and Next.js",
 };
 
 export default function RootLayout({ children }) {
