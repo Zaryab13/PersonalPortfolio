@@ -11,21 +11,23 @@ import { FaGithubSquare } from "react-icons/fa";
 import useSectionView from "@/hooks/useSection-View";
 
 const Intro = () => {
-  const [observerRef] = useSectionView("Home", 0.5)
-//   const { ref: observerRef, inView } = useInView({
-//     threshold: 0.50,
-//   }); //ref to attach the oberver APi with element and a value weather it is in view or not
-//   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
+  const [observerRef] = useSectionView("Home", 0.5);
+  //   const { ref: observerRef, inView } = useInView({
+  //     threshold: 0.50,
+  //   }); //ref to attach the oberver APi with element and a value weather it is in view or not
+  //   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
-// useEffect(() => {
-//   if (inView && new Date() - timeOfLastClick > 1000 ) {
-//     setActiveSection("Home");
-//   }
-// }, [inView]);
+  // useEffect(() => {
+  //   if (inView && new Date() - timeOfLastClick > 1000 ) {
+  //     setActiveSection("Home");
+  //   }
+  // }, [inView]);
   return (
     <section
       ref={observerRef}
-    id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[50rem]">
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[50rem]"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -63,36 +65,46 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Nasir Hussain.</span>{" "}
-        I&apos;m a <span className="font-bold">Full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">Data Science (Machine Learning)</span>
+        <span className="font-bold">Hello, I&apos;m Zaryab Khan.</span> I&apos;m
+        a <span className="font-bold">Front-End developer</span> with{" "}
+        <span className="font-bold">over 1 year</span> of experience. I enjoy
+        building appealing <span className="italic">sites & apps</span>. My
+        focus is <span className="underline"> Full Stack Development</span> in
+        JavaScript
       </motion.h1>
 
-      <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium  "
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{delay: 0.1}}>
+      <motion.div
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium  "
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+      >
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
-          Contact Me Here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />{" "}
+          Contact Me Here{" "}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />{" "}
         </Link>
         <a
-          href="/Resume.pdf" download={true}
+          href="/Resume.pdf"
+          download={true}
           className="group bg-white
            px-7 py-3 flex items-center justify-center gap-2 shadow-2xl cursor-pointer rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition borderBlack dark:bg-white/10"
         >
-          Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          Download CV{" "}
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-        <a className="bg-white
-         text-gray-700 px-7 py-4 sm:p-4 flex items-center justify-center shadow-2xl rounded-full cursor-pointer focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60">
+        <a
+          className="bg-white
+         text-gray-700 px-7 py-4 sm:p-4 flex items-center justify-center shadow-2xl rounded-full cursor-pointer focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60"
+        >
           <BsLinkedin />
         </a>
-        <a className="bg-white
-         text-gray-700 p-4 flex items-center justify-center text-[1.25rem] shadow-2xl rounded-full cursor-pointer focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60">
+        <a
+          className="bg-white
+         text-gray-700 p-4 flex items-center justify-center text-[1.25rem] shadow-2xl rounded-full cursor-pointer focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60"
+        >
           <FaGithubSquare />
         </a>
       </motion.div>

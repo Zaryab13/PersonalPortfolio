@@ -40,7 +40,6 @@ const Header = () => {
                 }}
               >
                 {link.name}
-
                 {link.name === activeSection && (
                   <motion.span
                     className="bg-gray-200/60 dark:bg-gray-800 rounded-full absolute inset-0 -z-10"
