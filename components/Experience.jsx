@@ -45,15 +45,20 @@ const Experience = () => {
                 date={item.date}
                 icon={item.icon}
                 iconStyle={{
-                  background: theme === 'light'? "white" : "rgba(255,255,255,0.15)",
+                  background:
+                    theme === "light" ? "white" : "rgba(255,255,255,0.15)",
                   fontSize: "1.5rem",
                 }}
               >
-                <h3 className="font-semibold capitalize">{item.title}</h3>
-                <p className="font-normal !mt-0">{item.location}</p>
+                <h3 className="!font-medium capitalize">{item.title}</h3>
+                <h2 className="dark:text-slate-200 font-bold !text-2xl my-2">
+                  {item.company}
+                </h2>
+                <p className="!font-light !mt-0">{item.location}</p>
                 <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75 ">
                   {item.description}
                 </p>
+                {item.postion && <p>{item.postion}</p>}
               </VerticalTimelineElement>
             </React.Fragment>
           );
