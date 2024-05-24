@@ -11,7 +11,7 @@ const SubmitBtn = () => {
       disabled={pending}
     >
       {pending ? (
-        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"/>
+        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white" />
       ) : (
         <>
           Submit <FaPaperPlane className="text-xs opacity-70 transition-all" />
