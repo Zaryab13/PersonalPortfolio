@@ -74,37 +74,42 @@ const Intro = () => {
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium  "
+        className="grid auto-cols-max justify-center lg:auto-cols-max gap-2 px-4 text-lg font-medium  "
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 w-fit justify-self-center col-start-1 col-end-5 md:col-start-1 md:col-end-3 md:justify-self-end lg:col-start-1 lg:col-end-3 lg:justify-self-end text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
           Contact Me Here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />{" "}
         </Link>
         <a
-          href="/Resume.pdf"
+          href="/Zaryab_Resume.pdf"
           download={true}
-          className="group bg-white
-           px-7 py-3 flex items-center justify-center gap-2 shadow-2xl cursor-pointer rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition borderBlack dark:bg-white/10"
+          className="group bg-white  w-fit justify-self-center col-start-1 col-end-5 md:col-start-3 md:col-end-5 md:justify-self-start lg:col-start-3 lg:col-end-5 lg:justify-self-center
+           px-7 py-3 flex items-center justify-center gap-2 shadow-2xl cursor-pointer rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition borde rBlack dark:bg-white/10"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a
-          className="bg-white
-         text-gray-700 px-7 py-4 sm:p-4 flex items-center justify-center shadow-2xl rounded-full cursor-pointer focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://www.linkedin.com/in/zaryab-khan-fullstack"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white  w-fit justify-self-end col-start-2 col-end-3 
+         lg:col-start-5 lg:col-end-6 lg:justify-self-start text-gray-700 p-4 sm:p-4 flex items-center justify-center shadow-2xl rounded-full cursor-pointer focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin />
         </a>
         <a
-          className="bg-white
-         text-gray-700 p-4 flex items-center justify-center text-[1.25rem] shadow-2xl rounded-full cursor-pointer focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60"
-         href=""
+          href="https://github.com/Zaryab13"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white col-start-3 col-end-4 w-fit justify-self-start
+         lg:col-start-6 lg:col-end-7 text-gray-700 p-4 flex items-center justify-center text-[1.25rem] shadow-2xl rounded-full cursor-pointer focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60"
         >
           <FaGithubSquare />
         </a>

@@ -21,9 +21,14 @@ const ProjectCard = ({ title, description, tags, imageUrl, featureTag }) => {
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="relative bg-gray-100 dark:bg-white/10 dark:hover:bg-white/20 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 sm:h-[22x  rem] hover:bg-gray-200 dark:text-white transition rounded-xl">
-        <div className="overflow-y-auto relative flex flex-col h-full pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:max-w-[50%] z-50 sm:group-even:ms-[14rem] md:group-even:ms-[18rem]">
-          <h3 className="text-2xl font-semibold">{title} <span className="text-sm text-slate-800 px-2 py-1 bg-blue-400 rounded-xl">{featureTag}</span></h3>
+      <section className="relative bg-gray-100 dark:bg-white/10 dark:hover:bg-white/20 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 sm:h-[24rem] hover:bg-gray-200 dark:text-white transition rounded-xl">
+        <div className="overflow-y-auto  relative flex flex-col h-full pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:max-w-[50%] z-50 sm:group-even:ms-[14rem] md:group-even:ms-[18rem]">
+          <h3 className="text-2xl font-semibold flex flex-col">
+            {title}{" "}
+            <span className="text-sm text-slate-200 dark:text-slate-800 w-fit my-2 px-2 py-1 bg-blue-400 rounded-xl">
+              {featureTag}
+            </span>
+          </h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
@@ -52,7 +57,6 @@ const ProjectCard = ({ title, description, tags, imageUrl, featureTag }) => {
         group-even:group-hover:-translate-y-3
         group-even:group-hover:rotate-2"
         />
-        
       </section>
     </motion.div>
   );
