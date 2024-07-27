@@ -86,7 +86,7 @@ const Intro = () => {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />{" "}
         </Link>
         <a
-          href="/Zaryab_Resume.pdf"
+          href="/Zaryab Khan.pdf"
           download={true}
           className="group bg-white  w-fit justify-self-center col-start-1 col-end-5 md:col-start-3 md:col-end-5 md:justify-self-start lg:col-start-3 lg:col-end-5 lg:justify-self-center
            px-7 py-3 flex items-center justify-center gap-2 shadow-2xl cursor-pointer rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition borde rBlack dark:bg-white/10"
