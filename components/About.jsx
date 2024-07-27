@@ -28,25 +28,26 @@ const About = () => {
     >
       <SectionHeading>about me</SectionHeading>
       <p className="mb-3">
-        Currently in the 8th semester of my Bachelor's degree in{" "}
-        <span className="font-bold">Software Engineering</span>, I've been
-        independently learning web development for the past three years. During
-        this time, I've built numerous projects, which you can find on my GitHub
-        profile. <br /> The reason why i chose programming is because i like to
-        create new solutions. <br /> For my Final Year Project, I am developing
-        and will be integrating a MERN Stack application For ADHD diagnosis,
-        leveraging machine learning models. My core stack includes React,
-        Next.js, Node.js, and MongoDB. <br /> I am always eager to learn new
-        technologies and improve my skills. Currently, I am seeking a full-time
-        position as a software developer.
+        I'm a <span className="font-bold"> Software Engineering </span>graduate
+        who has been learning web development on my own for the past four years.
+        I've built many projects, which you can see on my{" "}
+        <a href="https://github.com/Zaryab13" className="underline hover:text-blue-400 transition-colors">
+          GitHub
+        </a>{" "}
+        profile. I chose programming because I enjoy creating new solutions. For
+        my Final Year Project, I combined a machine learning model with a MERN
+        Stack application using Python'sS Flask library for ADHD diagnosis. My
+        main skills are in React, Next.js, Node.js, and MongoDB. I'm always
+        excited to learn new technologies and improve my skills. Right now, I'm
+        looking for a full-time job as a Software Engineer Intern or Junior
+        Developer.
       </p>
 
       <p>
-        When I'm not coding, I enjoy capturing moments with my smartphone
-        camera, especially focusing on cinematic nature shots. Additionally, I
-        strive to maintain productivity through techniques like note-taking,
-        sticky notes, and using Todoist. Though not an avid reader yet, I try to
-        dive into the knowledge that books offer.
+        When I'm not coding, I like taking pictures with my phone, especially
+        nature shots. I also try to stay productive with note-taking, sticky
+        notes, and Todoist. I'm not a big reader yet, but I do try to learn from
+        books.
       </p>
     </motion.section>
   );

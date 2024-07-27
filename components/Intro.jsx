@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import ProfileImage from "@/public/Profile.jpg";
 import ProfileImage2 from "@/public/Profile.png";
 import { motion } from "framer-motion";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -67,10 +66,10 @@ const Intro = () => {
       >
         <span className="font-bold">Hello, I&apos;m Zaryab Khan.</span> I&apos;m
         a <span className="font-bold">Front-End developer</span> with{" "}
-        <span className="font-bold">over 1 year</span> of experience. I enjoy
+        <span className="font-bold">over 3 years</span> of experience. I enjoy
         building appealing <span className="italic">sites & apps</span>. My
-        focus is <span className="underline"> Full Stack Development</span> in
-        JavaScript
+        focus is <span className="underline">Front-End Development</span> in
+        React
       </motion.h1>
 
       <motion.div

@@ -2,12 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  --primary-color: #ffe537;
+  --secondary-color: #537fe7;
+  --white-color: #fff;
+  --dark-color: #1e1e1e;
+}
+
 ::-webkit-scrollbar {
   width: 2px;
 }
 
 ::-webkit-scrollbar-track {
-  background: white ;
+  background: white;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -25,4 +32,42 @@ html.dark {
 
 .borderBlack {
   @apply border border-black/10;
+}
+
+.gradient-button {
+  background: linear-gradient(var(--white-color), var(--white-color))
+      padding-box,
+    linear-gradient(45deg, var(--primary-color) 0%, var(--secondary-color) 100%)
+      border-box;
+  color: var(--dark-color);
+  font: 18px/18px;
+  padding: 6px 26px;
+  border: solid 2px transparent;
+  border-radius: 8px;
+}
+
+.gradient-button:hover {
+  transform: scale(1.05);
+}
+.dark .gradient-button {
+  background: linear-gradient(var(--dark-color), var(--dark-color)) padding-box,
+    linear-gradient(45deg, var(--primary-color) 0%, var(--secondary-color) 100%)
+      border-box;
+  color: var(--white-color);
+}
+
+.border-gradient {
+  background: linear-gradient(var(--white-color), var(--white-color))
+      padding-box,
+    linear-gradient(45deg, var(--primary-color) 0%, var(--secondary-color) 100%)
+      border-box;
+  color: var(--dark-color);
+  border: solid 1px transparent;
+}
+
+.dark .border-gradient {
+  background: linear-gradient(var(--dark-color), var(--dark-color)) padding-box,
+    linear-gradient(45deg, var(--primary-color) 0%, var(--secondary-color) 100%)
+      border-box;
+  color: var(--white-color);
 }

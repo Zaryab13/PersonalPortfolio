@@ -46,8 +46,7 @@ export const experiencesData = [
     title: "Front-End Developer",
     company: "Project Outsourcer",
     location: "Sweden",
-    description:
-      "",
+    description: "",
     postion: "Part-Time",
     icon: React.createElement(CgWorkAlt),
     date: "2024",
@@ -62,6 +61,10 @@ export const projectsData = [
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Framer Motion"],
     imageUrl: danielWebsiteImg,
     featureTag: "Client",
+    links: {
+      live: "https://daniel-cleaning-app.vercel.app/",
+      github: "https://github.com/Zaryab13/Daniel_cleaning_App",
+    },
   },
   {
     title: "Cleaning App (Admin Side)",
@@ -70,6 +73,9 @@ export const projectsData = [
     tags: ["React", "Next", "Tailwind", "Redux", "MUI"],
     imageUrl: danielDashboardImg,
     featureTag: "Client | Collaboration",
+    links: {
+      github: "https://github.com/Zaryab13/Daniel_cleaning_App",
+    },
   },
   {
     title: "Pricer",
@@ -78,6 +84,9 @@ export const projectsData = [
     tags: ["PHP", "HTML", "CSS", "MySQL"],
     imageUrl: pricerImg,
     featureTag: "Semester Project",
+    links: {
+      
+    },
   },
 ];
 
